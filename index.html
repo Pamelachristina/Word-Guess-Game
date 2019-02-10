@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rebel Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Word-Guess-Game/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../Word-Guess-Game/assets/css/reset.css" />
+    
+</head>
+<body>
+    <div class="container">
+
+        <!--Banner-->
+        <div class="header">
+            <img src="../Word-Guess-Game/assets/images/titleHeader.png" id="titleHeader">
+            </div>
+
+             <!--Guesses Remaining and Win Counters-->
+                 <div class="viewport">
+                     <p class="textleft">Guesses Remaining:
+                        <span id="guessesLeftDisplay">9</span>
+                     </p>
+                        <div class="textright">
+                            <p class="textrightwins">Wins:
+                                <span id="guessesLeftDisplay">0</span>
+                            </p>
+                        </div>
+                            <div class="getStarted">
+                              <h3>Press any Key to Start.</h3>
+
+                            </div>
+                                
+                                <img src="../Word-Guess-Game/assets/images/viewport.jpg" id="viewport">
+                                <img src="../Word-Guess-Game/assets/images/guesssong.jpg" id="viewport2">
+                                <img class="innerOverlay" src="" id="pictureDisplay" alt=""/>
+                                
+                 </div>
+
+            <!--Question mark Box-->
+                        <div class="current-word-box">
+                            <h5>Current Word</h5>
+                            <p class="songTitle"><span id="currentWordDisplay"></span></p>
+                            <p class="songTitle" id="revealedAnswerDisplay"></p>
+                            <p class="songTitle" id="correctDisplay"></p>      
+                            
+                        </div>
+
+             <!--Active Word Display (Current Word, Answer Reveal (if wrong), Guesses Made)-->
+
+                            <div class="letters-guessed">
+                                <h6>Letters Already Guessed</h6>
+                                <p class="songTitle"><span id="guessesMadeDisplay"></span></p>
+                            </div>
+    </div>
+
+        <!--Footer-->
+
+        <footer><p>Copyright &copy; 2019 Pamela Sanchez Hernandez</p></footer>
+
+        <!--David Bowie Audio-->
+        
+
+         <!--Javascript-->
+        <script src="../Word-Guess-Game/assets/javascript/game.js"></script>
+</body>
+</html>
