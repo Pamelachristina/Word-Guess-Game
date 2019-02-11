@@ -17,7 +17,7 @@ var bowieArray = [
     {
         title: "Changes",
         image1: "assets/images/guesssong.jpg",
-        image2: "assets/images/guesssong.jpg"
+        image2: "assets/images/changes.jpg"
     },
 
     {
@@ -77,6 +77,20 @@ var lettersRemaining = bowie.length;
 //Set up the answer array to store word (answer) as an array for indexing.
 var answerArray = []; 
 
+
+//Convert word answer into an array.
+for (var i = 0; i < bowie.length; i++) {
+    //If an answer has more than one word, use + as a separator. A space will be displayed when currentWord is displayed. 
+    if (bowie[i] === "+") {
+        answerArray[i] = "&nbsp;";
+    } else {
+        //Replace word answer with "_"s
+        answerArray[i] = "_";
+    }
+}
+
+
+
 /* LISTENERS
  ----------------------------------------------------------------------------------------------------------------*/
 
@@ -104,7 +118,7 @@ function letterCheck(guess) {
 //Check whether the guess is correct
 var winScore = 0;
 function correctGuessCheck(guess) {
-    if (bowie.indexOf(guess.key) > -1) {
+    if (bowie.toLowerCase() .indexOf(guess.key.toLowerCase()) > -1) {
         //if guess is correct, run correctGuess function.
         correctGuess(guess);
     } else {
@@ -121,11 +135,11 @@ function correctGuess(guess) {
 }
 
     function addCorrectLetter(guess) {
-        for (var i = 0; i < bowie.length; i++) {
+        for (var j = 0; j < bowie.length; j++) {
             //If guess matches an existing letter in the answer.
-            if (guess.key === bowie[i]) {
+            if (guess.key === bowie[j]) {
             //Push correct letter to answerArray as upperCase.
-            answerArray[i] = guess.key.toUpperCase();
+            answerArray[j] = guess.key.toUpperCase();
             displayCurrentWord();
             //Reduce letters remaining for win by one.
             lettersRemaining--;
@@ -263,6 +277,8 @@ var answerArray = [];
  //Re-establish lettersRemaining (for win)
  lettersRemaining = bowie.length;
 
+
+
  //Re-establish guessesLeft for user.
  guessesLeft = 9;
  displayGuessesLeft()
@@ -273,6 +289,10 @@ var answerArray = [];
  
  //Display current word.
  displayCurrentWord();
+
+  //Play "Bowie" audio.
+  document.getElementById('changes').play();
+
 
   //Empty revealedAnswer display if user was unsuccessful previously.
   revealedAnswerDisplay.textContent = "";

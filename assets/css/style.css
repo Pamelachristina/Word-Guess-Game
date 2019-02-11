@@ -31,10 +31,14 @@ html {
     position: relative;
     border-radius: 8px;
     margin-left: -15px;
+    
   }
-.viewport{
-  height: 100%;
-}
+
+  .viewport{
+    margin: 0;
+    height: 600px;
+  }
+
   #viewport2{
     float: left;
     margin: 80px;
@@ -56,6 +60,7 @@ html {
     
     margin-top: 20px;
     margin-left: -15px;
+    height: 30px;
 
   }
 
@@ -64,11 +69,11 @@ html {
     left: -20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    
   }
 
-  .current-word-box{
-    padding: -40px;
-  }
+  
+
 
   h2{
     text-align: center;
@@ -85,9 +90,85 @@ html {
     float: right;
       
   }
+
+  h5{
+    text-align: center;
+    color: black;
+    font-display: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    padding: 20px;
+    
+
+  }
+
+  h6{
+    text-align: center;
+    color: black;
+    font-display: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    padding: 20px;
+    
+
+  }
+
+  #correctDisplay{
+    text-align: center;
+    padding: 20px;
+  }
+
+  #revealedAnswerDisplay{
+    text-align: center;
+    color: forestgreen;
+    font-size: 35px;
+    padding: 40px;
+    
+
+    
+  }
+
+
+  #currentWord{
+    text-align: center;
+    color: black;
+    font-display: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  #lettersGuessed{
+    text-align: center;
+    color: black;
+    font-display: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  #currentWordDisplay{
+    height: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 20px;
+  }
+
+
   .letters-guessed{
     margin: 10px;
     
+  }
+  #guessesMadeDisplay{
+    text-align: center;
+    text-align: center;
+    color: black;
+    font-display: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    padding: 20px;
+
   }
 
   footer{

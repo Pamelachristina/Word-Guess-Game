@@ -40,7 +40,7 @@
 
             <!--Question mark Box-->
                         <div class="current-word-box">
-                            <h5>Current Word</h5>
+                            <h5 id="currentWord">Current Word</h5>
                             <p class="songTitle"><span id="currentWordDisplay"></span></p>
                             <p class="songTitle" id="revealedAnswerDisplay"></p>
                             <p class="songTitle" id="correctDisplay"></p>      
@@ -50,7 +50,7 @@
              <!--Active Word Display (Current Word, Answer Reveal (if wrong), Guesses Made)-->
 
                             <div class="letters-guessed">
-                                <h6>Letters Already Guessed</h6>
+                                <h6 id="lettersGuessed">Letters Already Guessed</h6>
                                 <p class="songTitle"><span id="guessesMadeDisplay"></span></p>
                             </div>
     </div>
@@ -60,8 +60,13 @@
         <footer><p>Copyright &copy; 2019 Pamela Sanchez Hernandez</p></footer>
 
         <!--David Bowie Audio-->
+        <audio id="changes" src="../Word-Guess-Game/assets/audio/changes.mp3"></audio>
+        <audio id="LifeOnMars" src="../Word-Guess-Game/assets/audio/LifeOnMars.mp3"></audio>
+        <audio id="rebelRebel" src="../Word-Guess-Game/assets/audio/rebelRebel.mp3"></audio>
+        <audio id="SpaceOddity" src="../Word-Guess-Game/assets/audio/SpaceOddity.mp3"></audio>
+        <audio id="underPresure" src="../Word-Guess-Game/assets/audio/underPressure.mp3"></audio>
         
-
+    
          <!--Javascript-->
         <script src="../Word-Guess-Game/assets/javascript/game.js"></script>
 </body>
